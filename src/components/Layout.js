@@ -6,8 +6,8 @@ import Header from './Header'
 import Footer from './Footer'
 
 const Flex = styled.main`
-  padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding-top: var(--xl);
+  padding-bottom: var(--xl);
   display: flex;
   flex-direction: column;
   align-items: center;

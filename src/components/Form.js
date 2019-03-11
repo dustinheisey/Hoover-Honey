@@ -132,13 +132,13 @@ const Form = () => (
       <FormItem>
         <label htmlFor="name">
           <span>Name</span>
-          <Input type="text" name="name" autoComplete="name" />
+          <Input type="text" name="name" required autoComplete="name" />
         </label>
       </FormItem>
       <FormItem>
         <label htmlFor="email">
           <span>Email</span>
-          <Input type="email" name="email" autoComplete="email" />
+          <Input type="email" name="email" required autoComplete="email" />
         </label>
       </FormItem>
       <FormItem>
@@ -151,7 +151,8 @@ const Form = () => (
       </FormItem>
       <FormItem>
         <label htmlFor="message">
-          <span>Message</span> <TextArea id="message" name="message" rows="6" />
+          <span>Message</span>{' '}
+          <TextArea id="message" required name="message" rows="6" />
         </label>
       </FormItem>
       <BtnForm type="submit" text="submit" />

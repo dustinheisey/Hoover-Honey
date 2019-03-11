@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types'
 import { styled, devices } from '../../../config/global'
 
 const Container = styled.div`
@@ -33,5 +34,10 @@ const TeamMember = ({ children, title }) => (
     <Heading>{title}</Heading>
   </Container>
 )
+
+TeamMember.propTypes = {
+  children: propTypes.any.isRequired,
+  title: propTypes.string.isRequired,
+}
 
 export default TeamMember

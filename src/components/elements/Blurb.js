@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types'
 import { styled, devices } from '../../../config/global'
 
 const Container = styled.div`
@@ -30,5 +31,11 @@ const Blurb = ({ children, title, text }) => (
     <p>{text}</p>
   </Container>
 )
+
+Blurb.propTypes = {
+  children: propTypes.any.isRequired,
+  title: propTypes.string.isRequired,
+  text: propTypes.string.isRequired,
+}
 
 export default Blurb

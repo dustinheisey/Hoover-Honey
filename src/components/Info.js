@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types'
 import { styled, devices } from '../../config/global'
 import { BtnPrimary } from './elements/Button'
 
@@ -37,6 +38,11 @@ const BenefitsList = styled.div`
   justify-content: center;
 `
 
+const PropValues = {
+  children: propTypes.any.isRequired,
+  title: propTypes.string.isRequired,
+  text: propTypes.string.isRequired,
+}
 const BenefitsInfo = ({ children, title, text }) => (
   <BenefitsContainer>
     <BenefitsImgContainer>{children}</BenefitsImgContainer>
@@ -46,6 +52,8 @@ const BenefitsInfo = ({ children, title, text }) => (
     </BenefitsList>
   </BenefitsContainer>
 )
+
+BenefitsInfo.propTypes = PropValues
 
 const ImpactImgContainer = styled.div`
   width: 100%;
@@ -110,6 +118,8 @@ const ImpactInfo = ({ children, title, text }) => (
   </ImpactContainer>
 )
 
+ImpactInfo.propTypes = PropValues
+
 const ProductsImgContainer = styled.div`
   width: 100%;
   margin-bottom: var(--md);
@@ -136,5 +146,13 @@ const ProductsInfo = ({ children, title, text, link, btnText }) => (
     <BtnPrimary link={link} text={btnText} />
   </ProductsContainer>
 )
+
+ProductsInfo.propTypes = {
+  children: propTypes.any.isRequired,
+  title: propTypes.string.isRequired,
+  text: propTypes.string.isRequired,
+  link: propTypes.string.isRequired,
+  btnText: propTypes.string.isRequired,
+}
 
 export { BenefitsInfo, ImpactInfo, ProductsInfo }

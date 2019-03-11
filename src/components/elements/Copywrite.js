@@ -99,11 +99,13 @@ const copywrite = () => (
     <Social>
       <SocialItem>
         <IoMdCall />
-        xxx-xxx-xxxx
+        <StyledExternalLink href="tel:1-817-374-9816" rel="noopener">
+          817-374-9816
+        </StyledExternalLink>
       </SocialItem>
       <SocialItem>
         <IoMdMail />
-        <StyledExternalLink href="mailto:hooverjarod@gmail.com">
+        <StyledExternalLink href="mailto:hooverjarod@gmail.com" rel="noopener">
           hooverjarod@gmail.com
         </StyledExternalLink>
       </SocialItem>
@@ -112,6 +114,7 @@ const copywrite = () => (
         <StyledExternalLink
           href="https://www.facebook.com/hooverhoney/"
           target="_blank"
+          rel="noopener"
         >
           Facebook
         </StyledExternalLink>
@@ -121,6 +124,7 @@ const copywrite = () => (
         <StyledExternalLink
           href="https://www.youtube.com/channel/UCJtq2YIfh2SHn49mJoJ9PJg"
           target="_blank"
+          rel="noopener"
         >
           Youtube
         </StyledExternalLink>
@@ -146,6 +150,7 @@ const copywrite = () => (
         <StyledExternalLink
           href="https://www.getdallaswebdesign.com"
           target="_blank"
+          rel="noopener"
         >
           <Small>Designed by Dustin Heisey</Small>
         </StyledExternalLink>

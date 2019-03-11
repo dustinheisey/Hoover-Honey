@@ -5,13 +5,14 @@ import {
   IoMdMail,
   IoMdCall,
 } from 'react-icons/io'
-import { BtnPrimary } from './elements/Button'
+import { BtnForm } from './elements/Button'
 import { styled, devices } from '../../config/global'
 
 const Container = styled.section`
   @media ${devices.desktop} {
     padding: var(--xxl);
   }
+
   @media ${devices.tablet} {
     padding: var(--md);
   }
@@ -81,19 +82,24 @@ const Form = () => (
       <SocialItem>
         <IoMdMail />
         <Heading>Email: </Heading>
-        <SocialLink href="mailto:hooverjarod@gmail.com">
+        <SocialLink href="mailto:hooverjarod@gmail.com" rel="noopener">
           hooverjarod@gmail.com
         </SocialLink>
       </SocialItem>
       <SocialItem>
         <IoMdCall />
-        <Heading>Phone: </Heading> xxx-xxx-xxxx
+        <Heading>Phone: </Heading>
+        <SocialLink href="tel:1-817-374-9816" rel="noopener">
+          {' '}
+          817-374-9816
+        </SocialLink>
       </SocialItem>
       <SocialItem>
         <IoLogoFacebook />
         <SocialLink
           href="https://www.facebook.com/hooverhoney/"
           target="_blank"
+          rel="noopener"
         >
           Facebook
         </SocialLink>
@@ -103,6 +109,7 @@ const Form = () => (
         <SocialLink
           href="https://www.youtube.com/channel/UCJtq2YIfh2SHn49mJoJ9PJg"
           target="_blank"
+          rel="noopener"
         >
           Youtube
         </SocialLink>
@@ -117,14 +124,12 @@ const Form = () => (
     >
       <input type="hidden" name="form-name" value="contact" />
       <p hidden>
-        <label>
+        <label htmlFor="bot-field">
           Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
       <FormItem>
-        <label htmlFor="name" className="text-sm margin-tb-sm">
-          Name
-        </label>
+        <label htmlFor="name">Name</label>
         <Input type="text" name="name" autoComplete="name" />
       </FormItem>
       <FormItem>
@@ -141,9 +146,7 @@ const Form = () => (
         <label htmlFor="message">Message</label>
         <TextArea id="message" name="message" rows="6" />
       </FormItem>
-      <BtnPrimary type="submit">
-        <p>Send</p>
-      </BtnPrimary>
+      <BtnForm type="submit" text="submit" link="/" />
     </StyledForm>
   </Container>
 )

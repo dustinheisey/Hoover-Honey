@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import { styled, devices } from '../../../config/global'
 import Honey from '../../components/elements/images/Honey'
+import { BtnPrimary } from '../../components/elements/Button'
 import { StoreCall } from '../../components/Call'
 
 const Container = styled.section`
@@ -25,8 +26,19 @@ const ImgContainer = styled.div`
   align-self: flex;start;
   margin-bottom: var(--lg);
   @media ${devices.tablet} {
-    width: 50%;
+    width: 65ch;
     margin-bottom: var(--sm);
+  }
+`
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--lg);
+  @media ${devices.tablet} {
+    padding: 0;
   }
 `
 
@@ -41,19 +53,12 @@ const DescriptionText = styled.p`
 const HoneyBundle = () => (
   <Layout>
     <Container>
-      <SEO title="Honey Bundle" keywords={[]} />
+      <SEO title="Summer Honey" keywords={[]} />
       <Heading>Honey Bundle</Heading>
       <ImgContainer>
         <Honey />
       </ImgContainer>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
+      <Content>
         <DescriptionText>
           Elitr magna sadipscing lorem tempor labore ipsum accusam stet sanctus.
           Justo takimata est clita et kasd dolore diam sed clita, sea ea lorem
@@ -67,25 +72,8 @@ const HoneyBundle = () => (
           labore ipsum accusam stet sanctus. Justo takimata est clita et kasd
           dolore diam sed clita
         </DescriptionText>
-        <button
-          style={{
-            borderRadius: '5px',
-            alignItems: 'center',
-            alignSelf: 'flex-start',
-            justifyContent: 'center',
-            padding: 'var(--sm) var(--lg)',
-            textDecoration: 'none',
-            cursor: 'pointer',
-            display: 'inline-block',
-            border: 'none',
-            outline: 'none',
-            background: 'var(--accent-1)',
-            color: 'var(--light)',
-          }}
-        >
-          Add to Cart
-        </button>
-      </div>
+        <BtnPrimary text="Add to Cart" link="/" />
+      </Content>
       <StoreCall />
     </Container>
   </Layout>

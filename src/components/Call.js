@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types'
 import ReactPlayer from 'react-player'
 import { styled, devices } from '../../config/global'
 import { BtnPrimary, BtnSecondaryLg, BtnPrimaryLg } from './elements/Button'
@@ -46,7 +47,7 @@ const VideoContent = styled.div`
   width: 100%;
   height: auto;
   display: inline-flex;
-  padding: var(--xxl);
+  padding: var(--xl);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -56,10 +57,14 @@ const BtnList = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   & * {
     margin: 0 var(--xs);
+  }
+
+  @media ${devices.tablet} {
+    justify-content: center;
   }
 `
 
@@ -81,25 +86,24 @@ const VideoCall = () => (
     <VideoContent>
       <h1>Call to Company Page</h1>
       <BtnList>
-        <BtnSecondaryLg link="/contact" text="Go to Contact" />
-        <BtnPrimaryLg link="/company" text="Go to Company" />
+        <BtnSecondaryLg link="/contact" text="Contact" />
+        <BtnPrimaryLg link="/company" text="Company" />
       </BtnList>
     </VideoContent>
   </VideoContainer>
 )
 
 const IndexContainer = styled.section`
-
-@media ${devices.desktop} {
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  display: flex;
-}
-  flex-direction: column
+  @media ${devices.desktop} {
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    width: var(--width);
+  }
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: var(--width);
+  width: 100%;
 `
 const IndexImgContainer = styled.div`
   @media ${devices.tablet} {
@@ -122,6 +126,12 @@ const IndexText = styled.div`
   align-items: space-evenly;
   justify-content: center;
 `
+const PropValues = {
+  title: propTypes.string.isRequired,
+  text: propTypes.string.isRequired,
+  link: propTypes.string.isRequired,
+  btnText: propTypes.string.isRequired,
+}
 
 const IndexCall = ({ children, title, text, link, btnText }) => (
   <IndexContainer>
@@ -133,6 +143,14 @@ const IndexCall = ({ children, title, text, link, btnText }) => (
     </IndexText>
   </IndexContainer>
 )
+
+IndexCall.propTypes = {
+  children: propTypes.any.isRequired,
+  title: propTypes.string.isRequired,
+  text: propTypes.string.isRequired,
+  link: propTypes.string.isRequired,
+  btnText: propTypes.string.isRequired,
+}
 
 const AboutLeftContainer = styled.section`
 width: var(--width);
@@ -204,6 +222,8 @@ const AboutLeftCall = ({ title, text, link, btnText }) => (
   </AboutLeftContainer>
 )
 
+AboutLeftCall.propTypes = PropValues
+
 const AboutRightCall = ({ title, text, link, btnText }) => (
   <AboutRightContainer>
     <AboutRightText>
@@ -213,6 +233,8 @@ const AboutRightCall = ({ title, text, link, btnText }) => (
     </AboutRightText>
   </AboutRightContainer>
 )
+
+AboutRightCall.propTypes = PropValues
 
 const StoreContainer = styled.section`
   width: 100%;
@@ -291,6 +313,12 @@ const LocationCall = ({ title, text, link }) => (
     <BtnPrimary link={link} text="Find Us" />
   </LocationContainer>
 )
+
+LocationCall.propTypes = {
+  title: propTypes.string.isRequired,
+  text: propTypes.string.isRequired,
+  link: propTypes.string.isRequired,
+}
 
 export {
   VideoCall,

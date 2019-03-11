@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import { styled } from '../../../config/global'
+import { styled, devices } from '../../../config/global'
 
 const Btn = styled.button`
   border-radius: 5px;
@@ -31,18 +31,38 @@ const SecondaryBtn = styled(Btn)`
 `
 
 const PrimaryBtnLg = styled(PrimaryBtn)`
-  padding-left: var(--xxl);
-  padding-right: var(--xxl);
+  padding-left: var(--xl);
+  padding-right: var(--xl);
+
+  @media ${devices.tablet} {
+    padding-left: var(--xxl);
+    padding-right: var(--xxl);
+  }
 `
 
 const SecondaryBtnLg = styled(SecondaryBtn)`
-  padding-left: var(--xxl);
-  padding-right: var(--xxl);
+  padding-left: var(--xl);
+  padding-right: var(--xl);
+
+  @media ${devices.tablet} {
+    padding-left: var(--xxl);
+    padding-right: var(--xxl);
+  }
+`
+
+const FormBtn = styled(PrimaryBtn)`
+  align-self: flex-start;
+`
+
+const BtnLink = styled(Link)`
+  display: block;
+  width: 100%;
+  height: 100%;
 `
 
 const BtnPrimary = ({ text, link }) => (
   <PrimaryBtn>
-    <Link to={link}>{text}</Link>
+    <BtnLink to={link}>{text}</BtnLink>
   </PrimaryBtn>
 )
 
@@ -55,7 +75,7 @@ BtnPrimary.propTypes = PropValues
 
 const BtnSecondary = ({ text, link }) => (
   <SecondaryBtn>
-    <Link to={link}>{text}</Link>
+    <BtnLink to={link}>{text}</BtnLink>
   </SecondaryBtn>
 )
 
@@ -63,7 +83,7 @@ BtnSecondary.propTypes = PropValues
 
 const BtnPrimaryLg = ({ text, link }) => (
   <PrimaryBtnLg>
-    <Link to={link}>{text}</Link>
+    <BtnLink to={link}>{text}</BtnLink>
   </PrimaryBtnLg>
 )
 
@@ -71,10 +91,18 @@ BtnPrimaryLg.propTypes = PropValues
 
 const BtnSecondaryLg = ({ text, link }) => (
   <SecondaryBtnLg>
-    <Link to={link}>{text}</Link>
+    <BtnLink to={link}>{text}</BtnLink>
   </SecondaryBtnLg>
 )
 
 BtnSecondaryLg.propTypes = PropValues
 
-export { BtnPrimary, BtnSecondary, BtnPrimaryLg, BtnSecondaryLg }
+const BtnForm = ({ text, link }) => (
+  <FormBtn type="submit">
+    <BtnLink to={link}>{text}</BtnLink>
+  </FormBtn>
+)
+
+BtnForm.propTypes = PropValues
+
+export { BtnPrimary, BtnSecondary, BtnPrimaryLg, BtnSecondaryLg, BtnForm }

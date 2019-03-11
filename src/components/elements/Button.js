@@ -8,46 +8,42 @@ const Btn = styled.button`
   outline: none;
   border: none;
   padding: var(--sm) var(--md);
-  text-decoration: none;
   cursor: pointer;
   display: inline-block;
+
+  & * {
+    color: var(--light);
+    text-decoration: none;
+  }
 `
 
 const PrimaryBtn = styled(Btn)`
   background-color: var(--accent-1);
-  color: var(--light);
-  width: 50%;
+  padding-left: var(--md);
+  padding-right: var(--md);
 `
 
 const SecondaryBtn = styled(Btn)`
   border: 3px solid var(--light);
   background-color: transparent;
-  color: var(--light);
-  width: 50%;
+  padding-left: var(--md);
+  padding-right: var(--md);
 `
 
 const PrimaryBtnLg = styled(PrimaryBtn)`
-  width: 25%;
-
-  & * {
-    color: var(--light);
-    text-decoration: none;
-  }
+  padding-left: var(--xxl);
+  padding-right: var(--xxl);
 `
 
 const SecondaryBtnLg = styled(SecondaryBtn)`
-  width: 25%;
-
-  & * {
-    color: var(--light);
-    text-decoration: none;
-  }
+  padding-left: var(--xxl);
+  padding-right: var(--xxl);
 `
 
 const BtnPrimary = ({ text, link }) => (
-  <Link to={link}>
-    <PrimaryBtn>{text}</PrimaryBtn>
-  </Link>
+  <PrimaryBtn>
+    <Link to={link}>{text}</Link>
+  </PrimaryBtn>
 )
 
 const PropValues = {
@@ -58,9 +54,9 @@ const PropValues = {
 BtnPrimary.propTypes = PropValues
 
 const BtnSecondary = ({ text, link }) => (
-  <Link to={link}>
-    <SecondaryBtn>{text}</SecondaryBtn>
-  </Link>
+  <SecondaryBtn>
+    <Link to={link}>{text}</Link>
+  </SecondaryBtn>
 )
 
 BtnSecondary.propTypes = PropValues

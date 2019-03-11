@@ -115,12 +115,13 @@ const Form = () => (
         </SocialLink>
       </SocialItem>
     </Social>
+
     <StyledForm
       name="contact"
       method="POST"
       action="/success/"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contact" />
       <p hidden>
@@ -129,24 +130,31 @@ const Form = () => (
         </label>
       </p>
       <FormItem>
-        <label htmlFor="name">Name</label>
-        <Input type="text" name="name" autoComplete="name" />
-      </FormItem>
-      <FormItem>
-        <label htmlFor="email">Email</label>
-        <Input type="email" name="email" autoComplete="email" />
+        <label htmlFor="name">
+          <span>Name</span>
+          <Input type="text" name="name" autoComplete="name" />
+        </label>
       </FormItem>
       <FormItem>
         <label htmlFor="email">
-          Phone - <em>Optional</em>
+          <span>Email</span>
+          <Input type="email" name="email" autoComplete="email" />
         </label>
-        <Input type="phone" name="phone" autoComplete="tel" />
       </FormItem>
       <FormItem>
-        <label htmlFor="message">Message</label>
-        <TextArea id="message" name="message" rows="6" />
+        <label htmlFor="email">
+          <span>
+            Phone - <em>Optional</em>
+          </span>
+          <Input type="phone" name="phone" autoComplete="tel" />
+        </label>
       </FormItem>
-      <BtnForm type="submit" text="submit" link="/" />
+      <FormItem>
+        <label htmlFor="message">
+          <span>Message</span> <TextArea id="message" name="message" rows="6" />
+        </label>
+      </FormItem>
+      <BtnForm type="submit" text="submit" />
     </StyledForm>
   </Container>
 )

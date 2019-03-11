@@ -52,6 +52,7 @@ const SecondaryBtnLg = styled(SecondaryBtn)`
 
 const FormBtn = styled(PrimaryBtn)`
   align-self: flex-start;
+  color: var(--light);
 `
 
 const BtnLink = styled(Link)`
@@ -97,11 +98,7 @@ const BtnSecondaryLg = ({ text, link }) => (
 
 BtnSecondaryLg.propTypes = PropValues
 
-const BtnForm = ({ text, link }) => (
-  <FormBtn type="submit">
-    <BtnLink to={link}>{text}</BtnLink>
-  </FormBtn>
-)
+const BtnForm = ({ text }) => <FormBtn type="submit">{text}</FormBtn>
 
 BtnForm.propTypes = PropValues
 

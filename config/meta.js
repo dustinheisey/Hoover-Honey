@@ -1,17 +1,12 @@
 module.exports = {
   siteUrl: `https://www.hoover-honey.com`,
-  siteTitle: `Gatsby Starter Styled`,
-  siteTitleAlt: `Gatsby Starter Styled`,
-  siteTitleShort: `Gatsby Styled`,
-  siteDescription: `Kick off your next, great Gatsby project with this starter.`,
+  siteTitle: `Hoover Honey`,
+  siteTitleAlt: `Hoover Honey`,
+  siteTitleShort: `Hoover Honey`,
+  siteDescription: ``,
   manifest: {
-    themeColor: `#253688`,
-    backgroundColor: `#253688`,
+    themeColor: `#C6920D`,
+    backgroundColor: `#2a2a2a`,
   },
   googleAnalyticsId: `UA-XXXXX`,
-  facebook: `Your optional Facebook App ID`,
-  twitter: `Your Twitter username`,
-  schema: {
-    author: `Jane Doe`,
-  },
 }

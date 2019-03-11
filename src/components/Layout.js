@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 const Flex = styled.main`
   padding-top: var(--xxl);
-  padding-bottom: var(--xxl);
+  padding-bottom: 20vmin;
   display: flex;
   flex-direction: column;
   align-items: center;

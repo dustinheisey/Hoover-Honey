@@ -37,6 +37,10 @@ const GlobalStyles = createGlobalStyle`
     
     --width: 90%;
   }
+
+  .snip-layout {
+    margin-top: 15vmin;
+  }
 `
 
 // Devices

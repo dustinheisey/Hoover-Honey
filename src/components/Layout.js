@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
         type="text/javascript"
         id="snipcart"
         src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
-        data-api-key="M2I2ZjFkMDktYmI5Zi00MDQ2LTkzOTctODBjYjQyMjU0ZjM5NjM2Nzg1MDcxNDYyNDQ4NDk1"
+        data-api-key="MzRhZGUzZGUtMDk2ZS00YzVjLWIyNjktOTFjZGM4YTE5ODQzNjM2ODczMzkwNDM2MTg1MjE5"
       />
     </Helmet>
     <GlobalStyles />

@@ -239,7 +239,9 @@ const nav = () => (
         </NavList>
       </NavContainer>
       <CallContainer>
-        <ShoppingCart />
+        <a href="#" className="snipcart-checkout">
+          <ShoppingCart />
+        </a>
         {/* <BtnPrimary link="/find-a-store" text="Find a Store" /> */}
       </CallContainer>
     </Container>
@@ -247,7 +249,9 @@ const nav = () => (
       <MobileImgLink to="/">
         <Placeholder />
       </MobileImgLink>
-      <ShoppingCart />
+      <a href="#" className="snipcart-checkout">
+        <ShoppingCart />
+      </a>
     </MobileTop>
     <MobileBottom>
       <MobileIcon to="/">

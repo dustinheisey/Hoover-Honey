@@ -102,4 +102,17 @@ const BtnForm = ({ text }) => <FormBtn type="submit">{text}</FormBtn>
 
 BtnForm.propTypes = PropValues
 
-export { BtnPrimary, BtnSecondary, BtnPrimaryLg, BtnSecondaryLg, BtnForm }
+const BtnShop = ({ text }) => <PrimaryBtn>{text}</PrimaryBtn>
+
+BtnShop.propTypes = {
+  text: PropTypes.string.isRequired,
+}
+
+export {
+  BtnPrimary,
+  BtnSecondary,
+  BtnPrimaryLg,
+  BtnSecondaryLg,
+  BtnForm,
+  BtnShop,
+}

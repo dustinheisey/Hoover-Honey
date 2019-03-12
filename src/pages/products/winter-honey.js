@@ -74,7 +74,31 @@ const WinterHoney = () => (
           labore ipsum accusam stet sanctus. Justo takimata est clita et kasd
           dolore diam sed clita
         </DescriptionText>
-        <BtnPrimary text="Add to Cart" link="/" />
+        <button
+          type="submit"
+          style={{
+            borderRadius: '5px',
+            outline: 'none',
+            border: 'none',
+            padding: 'var(--sm) var(--md)',
+            cursor: 'pointer',
+            display: 'inlineBlock',
+            color: 'var(--light)',
+            textDecoration: 'none',
+            backgroundColor: 'var(--accent-1)',
+            paddingLeft: 'var(--md)',
+            paddingRight: 'var(--md)',
+          }}
+          className="snipcart-add-item"
+          data-item-id="2"
+          data-item-name="Winter Honey"
+          data-item-price="3.00"
+          data-item-weight="20"
+          data-item-url="/"
+          data-item-description="Winter Honey"
+        >
+          Add to Cart
+        </button>
       </Content>
       <StoreCall />
     </Container>

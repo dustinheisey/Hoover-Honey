@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 
 const TermsOfUse = () => (
   <Layout>
-    <SEO title="Terms Of Use" keywords={[]} />
+    <SEO title="Terms Of Use" />
     <h1>Terms Of Use</h1>
     <p>
       OVERVIEW This website is operated by Hoover Honey. Throughout the site,

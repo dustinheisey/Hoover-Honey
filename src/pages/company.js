@@ -8,7 +8,7 @@ import { CompanyIntro } from '../components/Intro'
 
 const Company = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Our Company" />
     <CompanyIntro />
     {/* <Team /> */}
     <AboutRightCall

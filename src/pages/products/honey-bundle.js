@@ -53,7 +53,7 @@ const DescriptionText = styled.p`
 const HoneyBundle = () => (
   <Layout>
     <Container>
-      <SEO title="Summer Honey" keywords={[]} />
+      <SEO title="Honey Bundle" />
       <Heading>Honey Bundle</Heading>
       <ImgContainer>
         <Honey />

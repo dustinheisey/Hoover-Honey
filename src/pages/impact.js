@@ -23,7 +23,7 @@ const ImpactGrid = styled.section`
 `
 const Impact = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Your Impact" />
     <ImpactIntro />
 
     <ImpactGrid>

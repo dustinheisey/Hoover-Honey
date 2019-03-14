@@ -37,7 +37,7 @@ const BlurbGrid = styled.section`
 
 const Products = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Our Honey" />
     <ProductsIntro />
     <BlurbGrid>
       <Blurb

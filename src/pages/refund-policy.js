@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 
 const RefundPolicy = () => (
   <Layout>
-    <SEO title="Refund Policy" keywords={[]} />
+    <SEO title="Refund Policy" />
     <h1>Refund Policy</h1>
     <p>
       Hi, this is Jarod!  Satisfaction with your order is very important to me.

@@ -22,7 +22,7 @@ const Container = styled.main`
 `
 const Index = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" />
     <VideoCall />
     <Container>
       <IndexCall

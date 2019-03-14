@@ -24,7 +24,7 @@ const Container = styled.main`
 
 const Company = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Benefits of Our Honey" />
     <BenefitsIntro />
     <Container>
       <BenefitsInfo

@@ -31,7 +31,7 @@ const Call = styled(LocationCall)`
 
 const Store = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Find a Store" />
     <StoreIntro />
     <Container>
       <Call

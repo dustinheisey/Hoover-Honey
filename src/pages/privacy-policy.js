@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 
 const PrivacyPolicy = () => (
   <Layout>
-    <SEO title="Privacy Policy" keywords={[]} />
+    <SEO title="Privacy Policy" />
     <h1>Privacy Policy</h1>
     <p>
       This Privacy Policy describes how your personal information is collected,

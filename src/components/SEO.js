@@ -34,22 +34,6 @@ function SEO({ description, lang, meta, keywords, title }) {
                 property: `og:type`,
                 content: `website`,
               },
-              {
-                name: `twitter:card`,
-                content: `summary`,
-              },
-              {
-                name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
-              },
-              {
-                name: `twitter:title`,
-                content: title,
-              },
-              {
-                name: `twitter:description`,
-                content: metaDescription,
-              },
             ]
               .concat(
                 keywords.length > 0
@@ -71,6 +55,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
+  description: '',
 }
 
 SEO.propTypes = {
@@ -78,7 +63,7 @@ SEO.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
 }
 
 export default SEO

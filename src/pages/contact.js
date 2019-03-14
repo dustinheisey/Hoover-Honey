@@ -22,7 +22,7 @@ const Grid = styled.main`
 
 const contact = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Contact Us" />
     <ContactIntro />
     <Grid>
       <Form />

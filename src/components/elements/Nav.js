@@ -35,7 +35,7 @@ const MobileBottom = styled.nav`
   justify-content: space-between;
   background: var(--light);
   box-shadow: var(--shadow);
-  padding: var(--md) var(--xl);
+  padding: var(--md) var(--xxl);
   height: 15vmin;
   width: 100%;
   z-index: 10000;
@@ -68,22 +68,22 @@ const MobileIcon = styled(Link)`
 `
 
 const Home = styled(IoMdHome)`
-  width: 4.5vh;
+  width: 3.5vh;
   height: auto;
 `
 
 const About = styled(IoMdInformationCircle)`
-  width: 4.5vh;
+  width: 3.5vh;
   height: auto;
 `
 
 const Products = styled(IoMdBasket)`
-  width: 4.5vh;
+  width: 3.5vh;
   height: auto;
 `
 
 const Contact = styled(IoMdMail)`
-  width: 4.5vh;
+  width: 3.5vh;
   height: auto;
 `
 

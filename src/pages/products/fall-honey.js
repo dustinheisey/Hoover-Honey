@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import { styled, devices } from '../../../config/global'
 import Honey from '../../components/elements/images/Honey'
-import { BtnPrimary } from '../../components/elements/Button'
+import { BtnPrimaryExternal } from '../../components/elements/Button'
 import { StoreCall } from '../../components/Call'
 
 const Container = styled.section`
@@ -52,11 +52,11 @@ const DescriptionText = styled.p`
   }
 `
 
-const WinterHoney = () => (
+const FallHoney = () => (
   <Layout>
     <Container>
-      <SEO title="Winter Honey" />
-      <Heading>Winter Honey</Heading>
+      <SEO title="Fall Honey" />
+      <Heading>Fall Honey</Heading>
       <ImgContainer>
         <Honey />
       </ImgContainer>
@@ -74,35 +74,14 @@ const WinterHoney = () => (
           labore ipsum accusam stet sanctus. Justo takimata est clita et kasd
           dolore diam sed clita
         </DescriptionText>
-        <button
-          type="submit"
-          style={{
-            borderRadius: '5px',
-            outline: 'none',
-            border: 'none',
-            padding: 'var(--sm) var(--md)',
-            cursor: 'pointer',
-            display: 'inlineBlock',
-            color: 'var(--light)',
-            textDecoration: 'none',
-            backgroundColor: 'var(--accent-1)',
-            paddingLeft: 'var(--md)',
-            paddingRight: 'var(--md)',
-          }}
-          className="snipcart-add-item"
-          data-item-id="2"
-          data-item-name="Winter Honey"
-          data-item-price="3.00"
-          data-item-weight="20"
-          data-item-url="/"
-          data-item-description="Winter Honey"
-        >
-          Add to Cart
-        </button>
+        <BtnPrimaryExternal
+          text="Buy Now"
+          link="https://hoover-honey.myshopify.com/products/fall-honey"
+        />
       </Content>
       <StoreCall />
     </Container>
   </Layout>
 )
 
-export default WinterHoney
+export default FallHoney

@@ -5,7 +5,6 @@ import {
   IoMdInformationCircle,
   IoMdBasket,
   IoMdMail,
-  IoMdCart,
 } from 'react-icons/io'
 import { styled, devices } from '../../../config/global'
 import Placeholder from './images/Image'
@@ -30,29 +29,14 @@ const Container = styled.nav`
   }
 `
 
-const MobileTop = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--dark-2);
-  padding: var(--md);
-  width: 100%;
-  z-index: 10000;
-
-  @media ${devices.tablet} {
-    display: none;
-  }
-
-  position: fixed;
-  top: 0;
-`
-
 const MobileBottom = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--dark-2);
-  padding: var(--md) var(--lg);
+  background: var(--light);
+  box-shadow: var(--shadow);
+  padding: var(--md) var(--xl);
+  height: 15vmin;
   width: 100%;
   z-index: 10000;
 
@@ -60,6 +44,9 @@ const MobileBottom = styled.nav`
     display: none;
   }
 
+  & * {
+    color: #747474;
+  }
   position: fixed;
   bottom: 0;
 `
@@ -68,7 +55,7 @@ const MobileIcon = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   text-decoration: none;
   color: var(--light);
 
@@ -81,22 +68,22 @@ const MobileIcon = styled(Link)`
 `
 
 const Home = styled(IoMdHome)`
-  width: 3vh;
+  width: 4.5vh;
   height: auto;
 `
 
 const About = styled(IoMdInformationCircle)`
-  width: 3vh;
+  width: 4.5vh;
   height: auto;
 `
 
 const Products = styled(IoMdBasket)`
-  width: 3vh;
+  width: 4.5vh;
   height: auto;
 `
 
 const Contact = styled(IoMdMail)`
-  width: 3vh;
+  width: 4.5vh;
   height: auto;
 `
 
@@ -111,14 +98,6 @@ const ImgLink = styled(Link)`
   @media ${devices.tablet} {
     width: 10vmin;
     margin: 0 var(--lg);
-  }
-`
-
-const MobileImgLink = styled(Link)`
-  width: 5vh;
-
-  @media ${devices.tablet} {
-    display: none;
   }
 `
 
@@ -153,38 +132,6 @@ const NavLink = styled(Link)`
   }
 `
 
-const CallContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: var(--lg);
-`
-
-const ShoppingCart = styled(IoMdCart)`
-  width: 5vh;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: var(--md);
-  fill: var(--light);
-  transition: fill 0.25s;
-
-  &:hover {
-    fill: var(--accent-1);
-  }
-
-  &:active {
-    fill: var(--dark-2);
-  }
-
-  @media ${devices.tablet} {
-    fill: var(--dark-2);
-    width: 3vmin;
-    height: auto;
-  }
-`
-
 const nav = () => (
   <Navigation>
     <ImgLink to="/">
@@ -196,37 +143,6 @@ const nav = () => (
           <NavItem>
             <NavLink to="/">Home</NavLink>
           </NavItem>
-          {/* <Dropdown>
-            <NavLink to="/company">
-              About
-              <IoMdArrowDropdown />
-            </NavLink>
-            <SubMenu>
-              <NavItem>
-                <SubLink to="/company">Story</SubLink>
-              </NavItem>
-              <NavItem>
-                <SubLink to="/benefits">Benefits</SubLink>
-              </NavItem>
-              <NavItem>
-                <SubLink to="/impact">Impact</SubLink>
-              </NavItem>
-            </SubMenu>
-          </Dropdown>
-          <Dropdown>
-            <NavLink to="/products">
-              Products
-              <IoMdArrowDropdown />
-            </NavLink>
-            <SubMenu>
-              <NavItem>
-                <SubLink to="/raw-honey">Honey</SubLink>
-              </NavItem>
-              <NavItem>
-                <SubLink to="/chapstick">Chapstick</SubLink>
-              </NavItem>
-            </SubMenu>
-          </Dropdown> */}
           <NavItem>
             <NavLink to="/company">About</NavLink>
           </NavItem>
@@ -238,37 +154,19 @@ const nav = () => (
           </NavItem>
         </NavList>
       </NavContainer>
-      <CallContainer>
-        <a href="#" className="snipcart-checkout">
-          <ShoppingCart />
-        </a>
-        {/* <BtnPrimary link="/find-a-store" text="Find a Store" /> */}
-      </CallContainer>
     </Container>
-    <MobileTop>
-      <MobileImgLink to="/">
-        <Placeholder />
-      </MobileImgLink>
-      <a href="#" className="snipcart-checkout">
-        <ShoppingCart />
-      </a>
-    </MobileTop>
     <MobileBottom>
       <MobileIcon to="/">
         <Home />
-        <small>Home</small>
       </MobileIcon>
       <MobileIcon to="/company">
         <About />
-        <small>About</small>
       </MobileIcon>
       <MobileIcon to="/products">
         <Products />
-        <small>Products</small>
       </MobileIcon>
       <MobileIcon to="/contact">
         <Contact />
-        <small>Contact</small>
       </MobileIcon>
     </MobileBottom>
   </Navigation>

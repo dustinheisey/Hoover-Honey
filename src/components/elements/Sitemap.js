@@ -52,7 +52,7 @@ const Sitemap = () => (
       </List>
       <List>
         <StyledLink to="/products/summer-honey">Summer Honey</StyledLink>
-        <StyledLink to="/products/winter-honey">Winter Honey</StyledLink>
+        <StyledLink to="/products/fall-honey">Winter Honey</StyledLink>
         <StyledLink to="/products/honey-bundle">Honey Bundle</StyledLink>
         <StyledLink to="/contact">Contact</StyledLink>
         {/* <StyledLink to="/find-a-store">Find a Store</StyledLink> */}

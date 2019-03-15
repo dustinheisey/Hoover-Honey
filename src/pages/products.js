@@ -69,9 +69,9 @@ const Products = () => (
         <Honey />
       </ProductsInfo>
       <ProductsInfo
-        title="Winter Honey"
+        title="Fall Honey"
         text="Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est gubergren justo elitr lorem, takimata est justo eirmod sanctus."
-        link="/products/winter-honey"
+        link="/products/fall-honey"
         btnText="See Product Info"
       >
         <Honey />

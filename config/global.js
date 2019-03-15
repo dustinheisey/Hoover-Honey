@@ -32,14 +32,10 @@ const GlobalStyles = createGlobalStyle`
     --xl: 7vmin;
     --xxl: 15vmin;
 
-    --shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+    --shadow: 0px 3px 15px rgba(0,0,0,0.2);
     --shadow-hover: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     
     --width: 90%;
-  }
-
-  .snip-layout {
-    margin-top: 15vmin;
   }
 `
 

@@ -3,9 +3,9 @@ const config = require('./config/meta')
 module.exports = {
   siteMetadata: {
     title: `Hoover Honey`,
-    description: `Placeholder Description`,
+    description: `Raw unfiltered and locally produced honey`,
     author: `Dustin Heisey`,
-    siteUrl: `https:www.hoover-honey.com`,
+    siteUrl: `https:hoover-honey.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,10 +20,10 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {
-        displayName: process.env.NODE_ENV !== `production`,
-        fileName: false,
-      },
+      // options: {
+      //   displayName: process.env.NODE_ENV !== `production`,
+      //   fileName: false,
+      // },
     },
     {
       resolve: `gatsby-plugin-typography`,
@@ -31,12 +31,12 @@ module.exports = {
         pathToConfigModule: `./config/typography.js`,
       },
     },
-    {
-      resolve: `gatsby-plugin-lodash`,
-      options: {
-        disabledFeatures: [`shorthands`, `cloning`, `currying`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-lodash`,
+    //   options: {
+    //     disabledFeatures: [`shorthands`, `cloning`, `currying`],
+    //   },
+    // },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sitemap`,
     {

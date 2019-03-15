@@ -1,5 +1,4 @@
 import Typography from 'typography'
-import { devices } from './global'
 
 const typography = new Typography({
   baseFontSize: '18px',

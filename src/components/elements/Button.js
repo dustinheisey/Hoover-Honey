@@ -10,10 +10,15 @@ const Btn = styled.button`
   padding: var(--sm) var(--md);
   cursor: pointer;
   display: inline-block;
+  transition: box-shadow 0.25s;
 
   & * {
     color: var(--light);
     text-decoration: none;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow);
   }
 `
 
@@ -61,6 +66,12 @@ const BtnLink = styled(Link)`
   height: 100%;
 `
 
+const BtnA = styled.a`
+  display: block;
+  width: 100%;
+  height: 100%;
+`
+
 const BtnPrimary = ({ text, link }) => (
   <PrimaryBtn>
     <BtnLink to={link}>{text}</BtnLink>
@@ -82,6 +93,24 @@ const BtnSecondary = ({ text, link }) => (
 
 BtnSecondary.propTypes = PropValues
 
+const BtnPrimaryExternal = ({ text, link }) => (
+  <PrimaryBtn>
+    <BtnA href={link} target="_blank">
+      {text}
+    </BtnA>
+  </PrimaryBtn>
+)
+
+BtnPrimaryExternal.propTypes = PropValues
+
+const BtnSecondaryExternal = ({ text, link }) => (
+  <SecondaryBtn>
+    <BtnA href={link}>{text}</BtnA>
+  </SecondaryBtn>
+)
+
+BtnSecondaryExternal.propTypes = PropValues
+
 const BtnPrimaryLg = ({ text, link }) => (
   <PrimaryBtnLg>
     <BtnLink to={link}>{text}</BtnLink>
@@ -102,17 +131,12 @@ const BtnForm = ({ text }) => <FormBtn type="submit">{text}</FormBtn>
 
 BtnForm.propTypes = PropValues
 
-const BtnShop = ({ text }) => <PrimaryBtn>{text}</PrimaryBtn>
-
-BtnShop.propTypes = {
-  text: PropTypes.string.isRequired,
-}
-
 export {
   BtnPrimary,
   BtnSecondary,
   BtnPrimaryLg,
   BtnSecondaryLg,
+  BtnPrimaryExternal,
+  BtnSecondaryExternal,
   BtnForm,
-  BtnShop,
 }

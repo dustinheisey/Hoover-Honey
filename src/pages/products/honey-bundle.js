@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import { styled, devices } from '../../../config/global'
 import Honey from '../../components/elements/images/Honey'
-import { BtnShop } from '../../components/elements/Button'
+import { BtnPrimaryExternal } from '../../components/elements/Button'
 import { StoreCall } from '../../components/Call'
 
 const Container = styled.section`
@@ -72,31 +72,10 @@ const HoneyBundle = () => (
           labore ipsum accusam stet sanctus. Justo takimata est clita et kasd
           dolore diam sed clita
         </DescriptionText>
-        <button
-          type="submit"
-          style={{
-            borderRadius: '5px',
-            outline: 'none',
-            border: 'none',
-            padding: 'var(--sm) var(--md)',
-            cursor: 'pointer',
-            display: 'inlineBlock',
-            color: 'var(--light)',
-            textDecoration: 'none',
-            backgroundColor: 'var(--accent-1)',
-            paddingLeft: 'var(--md)',
-            paddingRight: 'var(--md)',
-          }}
-          className="snipcart-add-item"
-          data-item-id="3"
-          data-item-name="Honey Bundle"
-          data-item-price="3.00"
-          data-item-weight="20"
-          data-item-url="/"
-          data-item-description="Summer and Winter Honey"
-        >
-          Add to Cart
-        </button>
+        <BtnPrimaryExternal
+          text="Buy Now"
+          link="https://hoover-honey.myshopify.com/products/summer-fall-honey-bundle"
+        />
       </Content>
       <StoreCall />
     </Container>

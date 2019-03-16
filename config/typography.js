@@ -31,7 +31,7 @@ const typography = new Typography({
     },
     h3: {
       fontSize: '200%',
-      color: 'var(--dark-2)',
+      color: 'var(--s)',
     },
     h4: {
       fontSize: '100%',

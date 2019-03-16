@@ -41,20 +41,20 @@ const Products = () => (
     <ProductsIntro />
     <BlurbGrid>
       <Blurb
-        title="Key Selling Point 1"
-        text="Sit vero no dolore diam sit est erat tempor, aliquyam."
+        title="Raw and Local"
+        text="Hoover Honey provides the best raw, unfiltered, honey with 100% purity through rigorous practices. Free of antibiotics, pesticides, herbicides.  We don’t dilute with rice or corn syrup adulteration and we don’t mix our honey with other honey."
       >
         <Placeholder />
       </Blurb>
       <Blurb
-        title="Key Selling Point 2"
-        text="Sit vero no dolore diam sit est erat tempor, aliquyam."
+        title="Unfiltered"
+        text="The honey we provide is directly from our bees. Straining, not filtering, allows us to maintain the healthy benefits while removing the larger particles."
       >
         <Placeholder />
       </Blurb>
       <Blurb
-        title="Key Selling Point 3"
-        text="Sit vero no dolore diam sit est erat tempor, aliquyam."
+        title="Careful Packaging"
+        text="For the best shelf stability, we only use glass jars, some plastic containers still allow the honey to lose water content or can leech chemicals into your honey. Glass ensures Hoover Honey is the best quality and consistency every time."
       >
         <Placeholder />
       </Blurb>

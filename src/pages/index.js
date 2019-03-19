@@ -39,7 +39,7 @@ const Index = () => (
         title="Fall Honey"
         text="Our lighter honey is from spring flowers, grasses, trees, and shrubs. It is typically a sweeter, light flavor."
         link="/products/fall-honey"
-        btnText="Go to Winter Honey"
+        btnText="Go to Fall Honey"
       >
         <FallHoney />
       </IndexCall>

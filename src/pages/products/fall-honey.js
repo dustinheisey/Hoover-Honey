@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import { styled, devices } from '../../../config/global'
-import Honey from '../../components/elements/images/Honey'
+import FallHoney from '../../components/elements/images/FallHoney'
 import { BtnPrimaryExternal } from '../../components/elements/Button'
 import { StoreCall } from '../../components/Call'
 
@@ -52,27 +52,18 @@ const DescriptionText = styled.p`
   }
 `
 
-const FallHoney = () => (
+const FallHoneyProduct = () => (
   <Layout>
     <Container>
       <SEO title="Fall Honey" />
       <Heading>Fall Honey</Heading>
       <ImgContainer>
-        <Honey />
+        <FallHoney />
       </ImgContainer>
       <Content>
         <DescriptionText>
-          Elitr magna sadipscing lorem tempor labore ipsum accusam stet sanctus.
-          Justo takimata est clita et kasd dolore diam sed clita, sea ea lorem
-          ea sed ipsum sed diam. Rebum justo no at lorem accusam et clita. Dolor
-          dolore ipsum sadipscing invidunt dolor diam accusam, lorem lorem lorem
-          dolor sit ea. Elitr magna sadipscing lorem tempor labore ipsum accusam
-          stet sanctus. Justo takimata est clita et kasd dolore diam sed clita,
-          sea ea lorem ea sed ipsum sed diam. Rebum justo no at lorem accusam et
-          clita. Dolor dolore ipsum sadipscing invidunt dolor diam accusam,
-          lorem lorem lorem dolor sit ea. Elitr magna sadipscing lorem tempor
-          labore ipsum accusam stet sanctus. Justo takimata est clita et kasd
-          dolore diam sed clita
+          Our darker honey is from fall trees and shrubs,  It is typically
+          bolder, thicker and has a stronger nutty flavor.
         </DescriptionText>
         <BtnPrimaryExternal
           text="Buy Now"
@@ -84,4 +75,4 @@ const FallHoney = () => (
   </Layout>
 )
 
-export default FallHoney
+export default FallHoneyProduct

@@ -17,8 +17,8 @@ const GlobalStyles = createGlobalStyle`
   :root {
 
     // Color
-    --dark-1: #545454;
-    --dark-2: #2a2a2a;
+    --dark-1: #646e76;
+    --dark-2: #22313C;
     --light: #f6f6f6;
     --background: #fafafa;
     --accent-1: #C6920D;

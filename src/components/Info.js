@@ -56,13 +56,11 @@ const BenefitsInfo = ({ children, title, text }) => (
 BenefitsInfo.propTypes = PropValues
 
 const ImpactImgContainer = styled.div`
-  width: 100%;
+  display: none;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  margin-top: -30vmin;
 
   @media ${devices.tablet} {
     width: 75%;
-    margin-top: -25vmin;
 `
 const ImpactContainer = styled.section`
   background: var(--dark-2);
@@ -75,10 +73,8 @@ const ImpactContainer = styled.section`
 
   &:first-child {
     margin-bottom: 50vmin;
-    margin-top: var(--lg);
   }
   &:last-child {
-    margin-bottom: var(--xl);
   }
   @media ${devices.tablet} {
     margin: 0;

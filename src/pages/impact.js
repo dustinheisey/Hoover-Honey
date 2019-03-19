@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import { styled, devices } from '../../config/global'
 
-import Placeholder from '../components/elements/images/Image'
 import { AboutRightCall, AboutLeftCall } from '../components/Call'
 import { ImpactIntro } from '../components/Intro'
 import { ImpactInfo } from '../components/Info'
@@ -15,11 +14,9 @@ const ImpactGrid = styled.section`
     align-items: center;
     justify-items: center;
     grid-gap: var(--md);
-    margin-top: 20vmin;
   }
 
   width: var(--width);
-  margin-top: 20vmin;
 `
 const Impact = () => (
   <Layout>
@@ -28,29 +25,30 @@ const Impact = () => (
 
     <ImpactGrid>
       <ImpactInfo
-        title="Impact 1"
-        text="Ipsum ipsum labore amet eos accusam consetetur clita. Clita dolor justo labore labore et. Aliquyam ipsum justo et ut. Sit ea ipsum dolor ipsum aliquyam amet tempor sit. Et invidunt et ea sanctus et aliquyam magna gubergren elitr, et ut labore clita dolore. Et elitr eos sanctus est. No et magna dolore ea ipsum no. Eirmod sed et stet et dolores sadipscing est. Diam ipsum amet amet et clita amet sit sanctus. Ut et ut dolores dolor duo dolores. Amet stet clita ipsum ut elitr et. Amet invidunt amet magna tempor invidunt diam. At aliquyam kasd invidunt voluptua ipsum takimata.."
-      >
-        <Placeholder />
-      </ImpactInfo>
+        title="Sustainably Produced"
+        text="Our programs include Frustration-Free Packaging and retail packaging
+        standards, renewable energy and energy efficiency with our all electric
+        box truck, waste minimization, product take-back, responsible supply
+        chain management, social responsibility, science and innovation,
+        sustainability technology, sustainable transportation, and environmental
+        management."
+      />
       <ImpactInfo
-        title="Impact 2"
-        text="Ipsum ipsum labore amet eos accusam consetetur clita. Clita dolor justo labore labore et. Aliquyam ipsum justo et ut. Sit ea ipsum dolor ipsum aliquyam amet tempor sit. Et invidunt et ea sanctus et aliquyam magna gubergren elitr, et ut labore clita dolore. Et elitr eos sanctus est. No et magna dolore ea ipsum no. Eirmod sed et stet et dolores sadipscing est. Diam ipsum amet amet et clita amet sit sanctus. Ut et ut dolores dolor duo dolores. Amet stet clita ipsum ut elitr et. Amet invidunt amet magna tempor invidunt diam. At aliquyam kasd invidunt voluptua ipsum takimata.."
-      >
-        <Placeholder />
-      </ImpactInfo>
+        title="Compassionate and Ethical"
+        text="As beekeepers it is our personal responsibility to take great care of our bees. We monitor our beehives and apiaries regularly to ensure quality condition of the hive structures and nearby water and food sources, extract the honey onsite to ensure an ethical and compassionate procedure and communicate with local growers to work towards a better tomorrow for all of our local pollinators"
+      />
     </ImpactGrid>
     <AboutRightCall
-      title="Placeholder Company Call"
-      text="Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est gubergren justo elitr lorem, takimata est justo eirmod sanctus. Aliquyam et no ipsum sit aliquyam. Lorem et at rebum rebum rebum. Dolore stet gubergren sit at sadipscing."
+      title="A Simple Mission"
+      text="We started with a simple promise: to sell honey that people love while paying attention to our impact on the world. We kept that promise every day since."
       link="/company"
-      btnText="Action"
+      btnText="The Hoover Honey Story"
     />
     <AboutLeftCall
-      title="Placeholder Benefits Call"
-      text="Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est gubergren justo elitr lorem, takimata est justo eirmod sanctus. Aliquyam et no ipsum sit aliquyam. Lorem et at rebum rebum rebum. Dolore stet gubergren sit at sadipscing."
+      title="A healthy addition to your life"
+      text="Our honey is raw, unfiltered and locally produced. This preserves an immense amount of beneficial compounds and properties that help you live a healthier life."
       link="/benefits"
-      btnText="Action"
+      btnText="Benefits of Raw Local Honey"
     />
   </Layout>
 )

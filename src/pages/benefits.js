@@ -5,7 +5,8 @@ import { styled, devices } from '../../config/global'
 import { AboutRightCall, AboutLeftCall } from '../components/Call'
 import { BenefitsIntro } from '../components/Intro'
 import { BenefitsInfo } from '../components/Info'
-import Placeholder from '../components/elements/images/Image'
+import Taste from '../components/elements/images/Taste'
+import Nutrients from '../components/elements/images/Nutrients'
 
 const Container = styled.main`
   width: var(--width);
@@ -28,29 +29,37 @@ const Company = () => (
     <BenefitsIntro />
     <Container>
       <BenefitsInfo
-        title="Benefit 1"
-        text="Ipsum ipsum labore amet eos accusam consetetur clita. Clita dolor justo labore labore et. Aliquyam ipsum justo et ut. Sit ea ipsum dolor ipsum aliquyam amet tempor sit. Et invidunt et ea sanctus et aliquyam magna gubergren elitr, et ut labore clita dolore. Et elitr eos sanctus est. No et magna dolore ea ipsum no. Eirmod sed et stet et dolores sadipscing est. Diam ipsum amet amet et clita amet sit sanctus. Ut et ut dolores dolor duo dolores. Amet stet clita ipsum ut elitr et. Amet invidunt amet magna tempor invidunt diam. At aliquyam kasd invidunt voluptua ipsum takimata.."
+        title="Powerful Nutrients"
+        text="Honey has been used for centuries for healing and rejuvenation. Most of
+        the honey sold in stores has been heated and pasteurized. This
+        processing destroys all of the enzymes and beneficial compounds that
+        make raw honey so nutritious. Our honey is completely left
+        in its natural state right from the hives and therefore contains pollen,
+        enzymes, antioxidants and many other beneficial compounds that
+        researchers are just beginning to learn the great benefits about."
       >
-        <Placeholder />
+        <Nutrients />
       </BenefitsInfo>
       <BenefitsInfo
-        title="Benefit 2"
-        text="Ipsum ipsum labore amet eos accusam consetetur clita. Clita dolor justo labore labore et. Aliquyam ipsum justo et ut. Sit ea ipsum dolor ipsum aliquyam amet tempor sit. Et invidunt et ea sanctus et aliquyam magna gubergren elitr, et ut labore clita dolore. Et elitr eos sanctus est. No et magna dolore ea ipsum no. Eirmod sed et stet et dolores sadipscing est. Diam ipsum amet amet et clita amet sit sanctus. Ut et ut dolores dolor duo dolores. Amet stet clita ipsum ut elitr et. Amet invidunt amet magna tempor invidunt diam. At aliquyam kasd invidunt voluptua ipsum takimata.."
+        title="Incredible Taste"
+        text="Regular honey often looks clear and
+        syrupy. Our honey has not been treated with heat; it is often more
+        buttery, solid and opaque than pasteurized honey. This difference results in a richer and more decadent taste. It makes everything you put it in taste better. Real products from nature always tastes the best."
       >
-        <Placeholder />
+        <Taste />
       </BenefitsInfo>
     </Container>
     <AboutRightCall
-      title="Placeholder Company Call"
-      text="Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est gubergren justo elitr lorem, takimata est justo eirmod sanctus. Aliquyam et no ipsum sit aliquyam. Lorem et at rebum rebum rebum. Dolore stet gubergren sit at sadipscing."
+      title="A Simple Mission"
+      text="We started with a simple promise: to sell honey that people love while paying attention to our impact on the world. We kept that promise every day since."
       link="/company"
-      btnText="Action"
+      btnText="The Hoover Honey Story"
     />
     <AboutLeftCall
-      title="Placeholder Impacts Call"
-      text="Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est gubergren justo elitr lorem, takimata est justo eirmod sanctus. Aliquyam et no ipsum sit aliquyam. Lorem et at rebum rebum rebum. Dolore stet gubergren sit at sadipscing."
+      title="Changing the world one jar at a time"
+      text="We have designed our company from the start to be sustainable, compassionate and eco friendly. Every jar you buy of our honey is a vote for a better future for humanity and the world."
       link="/impact"
-      btnText="Action"
+      btnText="The Impact of Choosing Sustainable"
     />
   </Layout>
 )

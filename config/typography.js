@@ -6,7 +6,6 @@ const typography = new Typography({
   scaleRatio: 6,
   headerFontFamily: [
     'Searocks',
-    'Helvetica Neue',
     'Segoe UI',
     'Helvetica',
     'Arial',
@@ -22,7 +21,7 @@ const typography = new Typography({
   ],
   overrideStyles: () => ({
     h1: {
-      color: 'var(--accent-2)',
+      color: 'var(--dark-2)',
       fontSize: '400%',
     },
     h2: {
@@ -43,7 +42,7 @@ const typography = new Typography({
     },
     '@media only screen and (min-width:48em)': {
       h1: {
-        color: 'var(--accent-2)',
+        color: 'var(--dark-2)',
         fontSize: '500%',
       },
       h2: {

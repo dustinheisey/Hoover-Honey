@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: var(--width);
   text-align: center;
 
@@ -19,6 +19,7 @@ const Container = styled.div`
 const ImgContainer = styled.div`
   width: 80%;
   margin-bottom: var(--md);
+  background: var(--light);
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 
   @media ${devices.tablet} {
@@ -26,7 +27,7 @@ const ImgContainer = styled.div`
 `
 const Blurb = ({ children, title, text }) => (
   <Container>
-    <ImgContainer>{children}</ImgContainer>
+    {children}
     <h3>{title}</h3>
     <p>{text}</p>
   </Container>

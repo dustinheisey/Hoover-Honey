@@ -12,16 +12,16 @@ const Company = () => (
     <CompanyIntro />
     {/* <Team /> */}
     <AboutRightCall
-      title="Placeholder Benefits Call"
-      text="Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est gubergren justo elitr lorem, takimata est justo eirmod sanctus. Aliquyam et no ipsum sit aliquyam. Lorem et at rebum rebum rebum. Dolore stet gubergren sit at sadipscing."
+      title="A healthy addition to your life"
+      text="Our honey is raw, unfiltered and locally produced. This preserves an immense amount of beneficial compounds and properties that help you live a healthier life."
       link="/benefits"
-      btnText="Action"
+      btnText="Benefits of Raw Local Honey"
     />
     <AboutLeftCall
-      title="Placeholder Impacts Call"
-      text="Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est gubergren justo elitr lorem, takimata est justo eirmod sanctus. Aliquyam et no ipsum sit aliquyam. Lorem et at rebum rebum rebum. Dolore stet gubergren sit at sadipscing."
+      title="Changing the world one jar at a time"
+      text="We have designed our company from the start to be sustainable, compassionate and eco friendly. Every jar you buy of our honey is a vote for a better future for humanity and the world."
       link="/impact"
-      btnText="Action"
+      btnText="The Impact of Choosing Sustainable"
     />
   </Layout>
 )

@@ -76,6 +76,15 @@ const SocialLink = styled.a`
   text-decoration: none;
 `
 
+const Label = styled.label`
+  width: 100%;
+
+  & input,
+  textarea {
+    background: #efefef;
+  }
+`
+
 const Form = () => (
   <Container>
     <Social>
@@ -130,30 +139,36 @@ const Form = () => (
         </label>
       </p>
       <FormItem>
-        <label htmlFor="name">
+        <Label htmlFor="name">
           <span>Name</span>
           <Input type="text" name="name" required autoComplete="name" />
-        </label>
+        </Label>
       </FormItem>
       <FormItem>
-        <label htmlFor="email">
+        <Label htmlFor="email">
           <span>Email</span>
           <Input type="email" name="email" required autoComplete="email" />
-        </label>
+        </Label>
       </FormItem>
       <FormItem>
-        <label htmlFor="email">
+        <Label htmlFor="email">
           <span>
             Phone - <em>Optional</em>
           </span>
           <Input type="phone" name="phone" autoComplete="tel" />
-        </label>
+        </Label>
       </FormItem>
       <FormItem>
-        <label htmlFor="message">
-          <span>Message</span>{' '}
-          <TextArea id="message" required name="message" rows="6" />
-        </label>
+        <Label htmlFor="message">
+          <span>Message</span>
+          <TextArea
+            style={{ width: '100%' }}
+            id="message"
+            required
+            name="message"
+            rows="6"
+          />
+        </Label>
       </FormItem>
       <BtnForm type="submit" text="submit" />
     </StyledForm>

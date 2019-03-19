@@ -33,6 +33,13 @@ const SecondaryBtn = styled(Btn)`
   background-color: transparent;
   padding-left: var(--md);
   padding-right: var(--md);
+  transition: all 0.4s;
+  &:hover {
+    background: var(--light);
+    & * {
+      color: var(--dark-2);
+    }
+  }
 `
 
 const PrimaryBtnLg = styled(PrimaryBtn)`

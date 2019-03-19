@@ -4,7 +4,9 @@ import { styled, devices } from '../../config/global'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import { VideoCall, IndexCall, StoreCall } from '../components/Call'
-import Honey from '../components/elements/images/Honey'
+import FallHoney from '../components/elements/images/FallHoney'
+import SummerHoney from '../components/elements/images/SummerHoney'
+import HoneyBundle from '../components/elements/images/HoneyBundle'
 
 const Container = styled.main`
   width: var(--width);
@@ -27,27 +29,26 @@ const Index = () => (
     <Container>
       <IndexCall
         title="Summer Honey Heading"
-        text="Lorem eirmod at sadipscing elitr kasd et elitr justo. Consetetur stet accusam labore dolore sit dolore ea et, voluptua no diam lorem vero vero vero accusam diam. Et dolores sit clita accusam diam magna diam et accusam. Est dolor vero sed dolore ipsum diam no eirmod stet, takimata et vero."
-        link="/products/summer-honey"
+        text="Our darker honey is from fall trees and shrubs,  Ir is typically bolder, thicker and has a stronger nutty flavor."
         btnText="Go to Summer Honey"
       >
-        <Honey />
+        <SummerHoney />
       </IndexCall>
       <IndexCall
         title="Winter Honey Heading"
-        text="Lorem eirmod at sadipscing elitr kasd et elitr justo. Consetetur stet accusam labore dolore sit dolore ea et, voluptua no diam lorem vero vero vero accusam diam. Et dolores sit clita accusam diam magna diam et accusam. Est dolor vero sed dolore ipsum diam no eirmod stet, takimata et vero."
+        text="Our lighter honey is from spring flowers, grasses, trees, and shrubs. It is typically a sweeter, light flavor."
         link="/products/winter-honey"
         btnText="Go to Winter Honey"
       >
-        <Honey />
+        <FallHoney />
       </IndexCall>
       <IndexCall
         title="Honey Bundle Heading"
-        text="Lorem eirmod at sadipscing elitr kasd et elitr justo. Consetetur stet accusam labore dolore sit dolore ea et, voluptua no diam lorem vero vero vero accusam diam. Et dolores sit clita accusam diam magna diam et accusam. Est dolor vero sed dolore ipsum diam no eirmod stet, takimata et vero."
+        text="Get our Light and Dark honey with this connoisseur bundle and enjoy each of the flavor profiles. "
         link="/products/honey-bundle"
         btnText="Go to Honey Bundle"
       >
-        <Honey />
+        <HoneyBundle />
       </IndexCall>
     </Container>
     <StoreCall />

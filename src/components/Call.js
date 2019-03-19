@@ -84,10 +84,10 @@ const VideoCall = () => (
     </VideoWrapper>
     <VideoOverlay />
     <VideoContent>
-      <h1>Call to Company Page</h1>
+      <h1>Real honey sold by Real people</h1>
       <BtnList>
-        <BtnSecondaryLg link="/contact" text="Contact" />
-        <BtnPrimaryLg link="/company" text="Company" />
+        <BtnSecondaryLg link="/contact" text="Get in Touch" />
+        <BtnPrimaryLg link="/company" text="Learn Our Story" />
       </BtnList>
     </VideoContent>
   </VideoContainer>
@@ -266,59 +266,59 @@ const ContactStoreContainer = styled(StoreContainer)`
 `
 const StoreCall = () => (
   <StoreContainer>
-    <h2>Call to Products Page</h2>
-    <BtnPrimaryLg link="/products" text="Check Out Our Products" />
+    <h2>Ready for some honey?</h2>
+    <BtnPrimaryLg link="/products" text="Check out our products" />
   </StoreContainer>
 )
 
 const ContactStoreCall = () => (
   <ContactStoreContainer>
-    <h2>Call to Products Page</h2>
-    <BtnPrimaryLg link="/products" text="Check Out Our Products" />
+    <h2>Ready for some honey?</h2>
+    <BtnPrimaryLg link="/products" text="Check out our products" />
   </ContactStoreContainer>
 )
 
-const LocationContainer = styled.section`
-  width: var(--width);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: var(--md);
-  padding: var(--lg);
-  border-radius: 15px;
-  box-shadow: var(--shadow);
+// const LocationContainer = styled.section`
+//   width: var(--width);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: center;
+//   margin: var(--md);
+//   padding: var(--lg);
+//   border-radius: 15px;
+//   box-shadow: var(--shadow);
 
-  & * {
-    text-align: left;
-  }
+//   & * {
+//     text-align: left;
+//   }
 
-  @media ${devices.tablet} {
-    align-items: center;
-    width: var(--width);
-    text-align: center;
-    box-shadow: none;
-    padding: var(--sm);
+//   @media ${devices.tablet} {
+//     align-items: center;
+//     width: var(--width);
+//     text-align: center;
+//     box-shadow: none;
+//     padding: var(--sm);
 
-    & * {
-      text-align: center;
-    }
-  }
-`
+//     & * {
+//       text-align: center;
+//     }
+//   }
+// `
 
-const LocationCall = ({ title, text, link }) => (
-  <LocationContainer>
-    <h3>{title}</h3>
-    <p>{text}</p>
-    <BtnPrimary link={link} text="Find Us" />
-  </LocationContainer>
-)
+// const LocationCall = ({ title, text, link }) => (
+//   <LocationContainer>
+//     <h3>{title}</h3>
+//     <p>{text}</p>
+//     <BtnPrimary link={link} text="Find Us" />
+//   </LocationContainer>
+// )
 
-LocationCall.propTypes = {
-  title: propTypes.string.isRequired,
-  text: propTypes.string.isRequired,
-  link: propTypes.string.isRequired,
-}
+// LocationCall.propTypes = {
+//   title: propTypes.string.isRequired,
+//   text: propTypes.string.isRequired,
+//   link: propTypes.string.isRequired,
+// }
 
 export {
   VideoCall,
@@ -327,5 +327,5 @@ export {
   AboutRightCall,
   ContactStoreCall,
   StoreCall,
-  LocationCall,
+  // LocationCall,
 }

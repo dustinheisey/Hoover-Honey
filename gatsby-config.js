@@ -56,7 +56,7 @@ module.exports = {
         background_color: config.manifest.backgroundColor,
         theme_color: config.manifest.themeColor,
         display: `standalone`,
-        icon: `src/images/placeholder.png`,
+        icon: `src/images/hoover-honey-favicon.svg`,
       },
     },
     `gatsby-plugin-offline`,

@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import { styled, devices } from '../../../config/global'
-import Honey from '../../components/elements/images/Honey'
+import HoneyBundle from '../../components/elements/images/HoneyBundle'
 import { BtnPrimaryExternal } from '../../components/elements/Button'
 import { StoreCall } from '../../components/Call'
 
@@ -50,27 +50,20 @@ const DescriptionText = styled.p`
   }
 `
 
-const HoneyBundle = () => (
+const HoneyBundleProduct = () => (
   <Layout>
     <Container>
       <SEO title="Honey Bundle" />
       <Heading>Honey Bundle</Heading>
       <ImgContainer>
-        <Honey />
+        <HoneyBundle />
       </ImgContainer>
       <Content>
         <DescriptionText>
-          Elitr magna sadipscing lorem tempor labore ipsum accusam stet sanctus.
-          Justo takimata est clita et kasd dolore diam sed clita, sea ea lorem
-          ea sed ipsum sed diam. Rebum justo no at lorem accusam et clita. Dolor
-          dolore ipsum sadipscing invidunt dolor diam accusam, lorem lorem lorem
-          dolor sit ea. Elitr magna sadipscing lorem tempor labore ipsum accusam
-          stet sanctus. Justo takimata est clita et kasd dolore diam sed clita,
-          sea ea lorem ea sed ipsum sed diam. Rebum justo no at lorem accusam et
-          clita. Dolor dolore ipsum sadipscing invidunt dolor diam accusam,
-          lorem lorem lorem dolor sit ea. Elitr magna sadipscing lorem tempor
-          labore ipsum accusam stet sanctus. Justo takimata est clita et kasd
-          dolore diam sed clita
+          Get our Light and Dark honey with this connoisseur bundle and enjoy
+          each of the flavor profiles. Eat it or enjoy its many uses in tea,
+          coffee, and cooking. We keep both on hand in our personal kitchens to
+          use with different recipes, and as a topping or natural sweetener.
         </DescriptionText>
         <BtnPrimaryExternal
           text="Buy Now"
@@ -82,4 +75,4 @@ const HoneyBundle = () => (
   </Layout>
 )
 
-export default HoneyBundle
+export default HoneyBundleProduct

@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import { styled, devices } from '../../../config/global'
-import Honey from '../../components/elements/images/Honey'
+import SummerHoney from '../../components/elements/images/SummerHoney'
 import { BtnPrimaryExternal } from '../../components/elements/Button'
 import { StoreCall } from '../../components/Call'
 
@@ -50,27 +50,18 @@ const DescriptionText = styled.p`
   }
 `
 
-const SummerHoney = () => (
+const SummerHoneyProduct = () => (
   <Layout>
     <Container>
       <SEO title="Summer Honey" />
       <Heading>Summer Honey</Heading>
       <ImgContainer>
-        <Honey />
+        <SummerHoney />
       </ImgContainer>
       <Content>
         <DescriptionText>
-          Elitr magna sadipscing lorem tempor labore ipsum accusam stet sanctus.
-          Justo takimata est clita et kasd dolore diam sed clita, sea ea lorem
-          ea sed ipsum sed diam. Rebum justo no at lorem accusam et clita. Dolor
-          dolore ipsum sadipscing invidunt dolor diam accusam, lorem lorem lorem
-          dolor sit ea. Elitr magna sadipscing lorem tempor labore ipsum accusam
-          stet sanctus. Justo takimata est clita et kasd dolore diam sed clita,
-          sea ea lorem ea sed ipsum sed diam. Rebum justo no at lorem accusam et
-          clita. Dolor dolore ipsum sadipscing invidunt dolor diam accusam,
-          lorem lorem lorem dolor sit ea. Elitr magna sadipscing lorem tempor
-          labore ipsum accusam stet sanctus. Justo takimata est clita et kasd
-          dolore diam sed clita
+          Our lighter honey is from spring flowers, grasses, trees, and shrubs.
+          It is typically a sweeter, light flavor.
         </DescriptionText>
         <BtnPrimaryExternal
           text="Buy Now"
@@ -82,4 +73,4 @@ const SummerHoney = () => (
   </Layout>
 )
 
-export default SummerHoney
+export default SummerHoneyProduct

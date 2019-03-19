@@ -33,12 +33,18 @@ const FooterAbout = () => (
   <Container>
     <Heading>About Us</Heading>
     <Text>
-      Gubergren et lorem consetetur erat eos. Est dolor dolor nonumy eos est
-      gubergren justo elitr lorem, takimata est justo eirmod sanctus. Aliquyam
-      et no ipsum sit aliquyam. Lorem et at rebum rebum rebum. Dolore stet
-      gubergren sit at sadipscing. Vero sit ipsum at at rebum amet ipsum. Justo
-      no amet sed at takimata. Est diam no takimata ut aliquyam. Vero et eos
-      diam sea. Erat ea clita sea justo sea stet, et et erat consetetur.
+      Hoover Honey takes great pride in producing a premium product for our
+      consumers. We focus on quality! Jarod Hoover has always been a nature
+      lover and environmentalist. Being environmentally conscious with an
+      interest in sustainability, Jarod strives to be eco-friendly. Jarod
+      started keeping two beehives in 2013. While in high school, he grew his
+      small business by word of mouth and a few local stores. He also served an
+      internship with The University Of North Texas Sustainability Department.
+      Connecting with many great people and becoming a UNT Sustainability
+      Communities Initiative (SCI) partner helped mold Hoover Honey into a very
+      eco-conscious company.  Sustainability is still a passion for Jarod. 
+      Hoover Honey has now grown to providing many local customers, online sales
+      and stores with happy sweet smiles.
     </Text>
   </Container>
 )

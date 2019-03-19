@@ -7,7 +7,6 @@ import {
   IoMdMail,
 } from 'react-icons/io'
 import { styled, devices } from '../../../config/global'
-import Placeholder from './images/Image'
 // import { BtnPrimary } from "./Button";
 
 const Navigation = styled.section`
@@ -134,9 +133,6 @@ const NavLink = styled(Link)`
 
 const nav = () => (
   <Navigation>
-    <ImgLink to="/">
-      <Placeholder />
-    </ImgLink>
     <Container>
       <NavContainer>
         <NavList>

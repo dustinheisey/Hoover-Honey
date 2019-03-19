@@ -84,7 +84,7 @@ const VideoCall = () => (
     </VideoWrapper>
     <VideoOverlay />
     <VideoContent>
-      <h1>Real honey sold by Real people</h1>
+      <h1>Welcome to Hoover Honey</h1>
       <BtnList>
         <BtnSecondaryLg link="/contact" text="Contact Now" />
         <BtnPrimaryLg link="/company" text="Our Story" />

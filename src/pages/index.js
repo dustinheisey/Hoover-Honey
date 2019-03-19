@@ -28,22 +28,23 @@ const Index = () => (
     <VideoCall />
     <Container>
       <IndexCall
-        title="Summer Honey Heading"
+        title="Summer Honey"
         text="Our darker honey is from fall trees and shrubs,  Ir is typically bolder, thicker and has a stronger nutty flavor."
+        link="/products/summer-honey"
         btnText="Go to Summer Honey"
       >
         <SummerHoney />
       </IndexCall>
       <IndexCall
-        title="Winter Honey Heading"
+        title="Fall Honey"
         text="Our lighter honey is from spring flowers, grasses, trees, and shrubs. It is typically a sweeter, light flavor."
-        link="/products/winter-honey"
+        link="/products/fall-honey"
         btnText="Go to Winter Honey"
       >
         <FallHoney />
       </IndexCall>
       <IndexCall
-        title="Honey Bundle Heading"
+        title="Honey Bundle"
         text="Get our Light and Dark honey with this connoisseur bundle and enjoy each of the flavor profiles. "
         link="/products/honey-bundle"
         btnText="Go to Honey Bundle"

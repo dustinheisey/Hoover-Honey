@@ -70,12 +70,7 @@ const ImpactContainer = styled.section`
   align-items: center;
   justify-content: center;
   padding: var(--lg);
-
-  &:first-child {
-    margin-bottom: 50vmin;
-  }
-  &:last-child {
-  }
+  margin-bottom: var(--lg);
   @media ${devices.tablet} {
     margin: 0;
 

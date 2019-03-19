@@ -86,8 +86,8 @@ const VideoCall = () => (
     <VideoContent>
       <h1>Real honey sold by Real people</h1>
       <BtnList>
-        <BtnSecondaryLg link="/contact" text="Get in Touch" />
-        <BtnPrimaryLg link="/company" text="Learn Our Story" />
+        <BtnSecondaryLg link="/contact" text="Contact Now" />
+        <BtnPrimaryLg link="/company" text="Our Story" />
       </BtnList>
     </VideoContent>
   </VideoContainer>

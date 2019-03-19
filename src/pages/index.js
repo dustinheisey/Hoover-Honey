@@ -29,7 +29,7 @@ const Index = () => (
     <Container>
       <IndexCall
         title="Summer Honey"
-        text="Our darker honey is from fall trees and shrubs,  Ir is typically bolder, thicker and has a stronger nutty flavor."
+        text="Our darker honey is from fall trees and shrubs,  It is typically bolder, thicker and has a strong nutty flavor."
         link="/products/summer-honey"
         btnText="Go to Summer Honey"
       >
@@ -45,7 +45,7 @@ const Index = () => (
       </IndexCall>
       <IndexCall
         title="Honey Bundle"
-        text="Get our Light and Dark honey with this connoisseur bundle and enjoy each of the flavor profiles. "
+        text="Get our Light and Dark honey with this connoisseur bundle and enjoy each of the flavor profiles."
         link="/products/honey-bundle"
         btnText="Go to Honey Bundle"
       >

@@ -56,7 +56,18 @@ const FallHoneyProduct = () => (
   <Layout>
     <Container>
       <SEO title="Fall Honey" />
-      <Heading>Fall Honey</Heading>
+      <Heading>
+        Fall Honey{' '}
+        <span
+          style={{
+            color: 'var(--dark-1)',
+            fontSize: '75%',
+            marginLeft: 'var(--sm)',
+          }}
+        >
+          $17.99
+        </span>
+      </Heading>
       <ImgContainer>
         <FallHoney />
       </ImgContainer>

@@ -29,25 +29,28 @@ const Index = () => (
     <Container>
       <IndexCall
         title="Summer Honey"
-        text="Our darker honey is from fall trees and shrubs,  It is typically bolder, thicker and has a strong nutty flavor."
+        price="$17.99"
+        text="Our lighter honey is from spring flowers, grasses, trees, and shrubs. It is typically a sweeter, light flavor."
         link="/products/summer-honey"
-        btnText="Go to Summer Honey"
+        buyLink="https://hoover-honey.myshopify.com/products/summer-honey"
       >
         <SummerHoney />
       </IndexCall>
       <IndexCall
         title="Fall Honey"
-        text="Our lighter honey is from spring flowers, grasses, trees, and shrubs. It is typically a sweeter, light flavor."
+        price="$17.99"
+        text="Our darker honey is from fall trees and shrubs,  It is typically bolder, thicker and has a strong nutty flavor."
         link="/products/fall-honey"
-        btnText="Go to Fall Honey"
+        buyLink="https://hoover-honey.myshopify.com/products/fall-honey"
       >
         <FallHoney />
       </IndexCall>
       <IndexCall
         title="Honey Bundle"
+        price="$$29.87"
         text="Get our Light and Dark honey with this connoisseur bundle and enjoy each of the flavor profiles."
         link="/products/honey-bundle"
-        btnText="Go to Honey Bundle"
+        buyLink="https://hoover-honey.myshopify.com/products/summer-fall-honey-bundle"
       >
         <HoneyBundle />
       </IndexCall>

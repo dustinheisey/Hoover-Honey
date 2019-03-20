@@ -47,7 +47,7 @@ const Sitemap = () => (
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/company">Our Story</StyledLink>
         <StyledLink to="/benefits">Real Benefits</StyledLink>
-        <StyledLink to="/impact">Your Impact</StyledLink>
+        <StyledLink to="/impact">Impact</StyledLink>
         <StyledLink to="/products">Products</StyledLink>
       </List>
       <List>

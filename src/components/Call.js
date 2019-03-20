@@ -2,7 +2,13 @@ import React from 'react'
 import propTypes from 'prop-types'
 import ReactPlayer from 'react-player'
 import { styled, devices } from '../../config/global'
-import { BtnPrimary, BtnSecondaryLg, BtnPrimaryLg } from './elements/Button'
+import {
+  BtnPrimary,
+  BtnPrimaryExternal,
+  BtnSecondaryLg,
+  BtnPrimaryLg,
+  BtnSecondaryDark,
+} from './elements/Button'
 
 import Left from '../images/about-call-left.svg'
 import Right from '../images/about-call-right.svg'
@@ -126,6 +132,28 @@ const IndexText = styled.div`
   align-items: space-evenly;
   justify-content: center;
 `
+
+const IndexList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+
+  * {
+    margin-bottom: var(--md);
+  }
+  @media ${devices.tablet} {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+
+    & * {
+      margin-right: var(--sm);
+      margin-bottom: 0;
+    }
+  }
+`
 const PropValues = {
   title: propTypes.string.isRequired,
   text: propTypes.string.isRequired,
@@ -133,13 +161,27 @@ const PropValues = {
   btnText: propTypes.string.isRequired,
 }
 
-const IndexCall = ({ children, title, text, link, btnText }) => (
+const IndexCall = ({ children, price, title, text, link, buyLink }) => (
   <IndexContainer>
     <IndexImgContainer>{children}</IndexImgContainer>
     <IndexText>
-      <h3>{title}</h3>
+      <h3>
+        {title}
+        <span
+          style={{
+            color: 'var(--dark-1)',
+            fontSize: '75%',
+            marginLeft: 'var(--sm)',
+          }}
+        >
+          {price}
+        </span>
+      </h3>
       <p>{text}</p>
-      <BtnPrimary link={link} text={btnText} />
+      <IndexList>
+        <BtnPrimaryExternal link={buyLink} text="Buy Now" />
+        <BtnSecondaryDark link={link} text="See Details" />
+      </IndexList>
     </IndexText>
   </IndexContainer>
 )
@@ -147,9 +189,10 @@ const IndexCall = ({ children, title, text, link, btnText }) => (
 IndexCall.propTypes = {
   children: propTypes.any.isRequired,
   title: propTypes.string.isRequired,
+  price: propTypes.string.isRequired,
   text: propTypes.string.isRequired,
   link: propTypes.string.isRequired,
-  btnText: propTypes.string.isRequired,
+  buyLink: propTypes.string.isRequired,
 }
 
 const AboutLeftContainer = styled.section`

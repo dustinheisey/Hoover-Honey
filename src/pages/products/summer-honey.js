@@ -54,7 +54,18 @@ const SummerHoneyProduct = () => (
   <Layout>
     <Container>
       <SEO title="Summer Honey" />
-      <Heading>Summer Honey</Heading>
+      <Heading>
+        Summer Honey
+        <span
+          style={{
+            color: 'var(--dark-1)',
+            fontSize: '75%',
+            marginLeft: 'var(--sm)',
+          }}
+        >
+          $17.99
+        </span>
+      </Heading>
       <ImgContainer>
         <SummerHoney />
       </ImgContainer>

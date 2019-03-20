@@ -54,7 +54,18 @@ const HoneyBundleProduct = () => (
   <Layout>
     <Container>
       <SEO title="Honey Bundle" />
-      <Heading>Honey Bundle</Heading>
+      <Heading>
+        Honey Bundle{' '}
+        <span
+          style={{
+            color: 'var(--dark-1)',
+            fontSize: '75%',
+            marginLeft: 'var(--sm)',
+          }}
+        >
+          $29.87
+        </span>
+      </Heading>
       <ImgContainer>
         <HoneyBundle />
       </ImgContainer>

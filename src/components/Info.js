@@ -86,10 +86,17 @@ const ImpactContainer = styled.section`
 const ImpactList = styled.div`
   color: var(--light);
   width: 100%;
-  padding: var(--lg);
+  padding: var(--md);
 
-  & p {
+  & p,
+  h2,
+  b {
     color: var(--light);
+    margin-bottom: var(--sm);
+  }
+
+  & b {
+    margin-bottom: var(--xxl);
   }
 `
 
@@ -99,13 +106,9 @@ const ImpactHeading = styled.h2`
   margin-top: var(--md);
 `
 
-const ImpactInfo = ({ children, title, text }) => (
+const ImpactInfo = ({ children }) => (
   <ImpactContainer>
-    <ImpactImgContainer>{children}</ImpactImgContainer>
-    <ImpactList>
-      <ImpactHeading>{title}</ImpactHeading>
-      <p>{text}</p>
-    </ImpactList>
+    <ImpactList>{children}</ImpactList>
   </ImpactContainer>
 )
 

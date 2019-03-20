@@ -42,6 +42,23 @@ const SecondaryBtn = styled(Btn)`
   }
 `
 
+const SecondaryBtnDark = styled(SecondaryBtn)`
+  border: 2px solid var(--dark-2);
+
+  & * {
+    color: var(--dark-2);
+  }
+
+  &:hover {
+    background: var(--dark-2);
+    box-shadow: var(--shadow);
+
+    & * {
+      color: var(--light);
+    }
+  }
+`
+
 const PrimaryBtnLg = styled(PrimaryBtn)`
   padding-left: var(--xl);
   padding-right: var(--xl);
@@ -100,6 +117,14 @@ const BtnSecondary = ({ text, link }) => (
 
 BtnSecondary.propTypes = PropValues
 
+const BtnSecondaryDark = ({ text, link }) => (
+  <SecondaryBtnDark>
+    <BtnLink to={link}>{text}</BtnLink>
+  </SecondaryBtnDark>
+)
+
+BtnSecondaryDark.propTypes = PropValues
+
 const BtnPrimaryExternal = ({ text, link }) => (
   <PrimaryBtn>
     <BtnA href={link} target="_blank">
@@ -141,6 +166,7 @@ BtnForm.propTypes = PropValues
 export {
   BtnPrimary,
   BtnSecondary,
+  BtnSecondaryDark,
   BtnPrimaryLg,
   BtnSecondaryLg,
   BtnPrimaryExternal,

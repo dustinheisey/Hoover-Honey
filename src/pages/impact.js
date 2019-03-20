@@ -10,7 +10,7 @@ import { ImpactInfo } from '../components/Info'
 const ImpactGrid = styled.section`
   @media ${devices.tablet} {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 0.65fr 0.35fr;
     align-items: center;
     justify-items: center;
     grid-gap: var(--md);
@@ -24,19 +24,52 @@ const Impact = () => (
     <ImpactIntro />
 
     <ImpactGrid>
-      <ImpactInfo
-        title="Sustainably Produced"
-        text="Our programs include Frustration-Free Packaging and retail packaging
-        standards, renewable energy and energy efficiency with our all electric
-        box truck, waste minimization, product take-back, responsible supply
-        chain management, social responsibility, science and innovation,
-        sustainability technology, sustainable transportation, and environmental
-        management."
-      />
-      <ImpactInfo
-        title="Compassionate and Ethical"
-        text="As beekeepers it is our personal responsibility to take great care of our bees. We monitor our beehives and apiaries regularly to ensure quality condition of the hive structures and nearby water and food sources, extract the honey onsite to ensure an ethical and compassionate procedure and communicate with local growers to work towards a better tomorrow for all of our local pollinators"
-      />
+      <ImpactInfo>
+        <h2
+          style={{
+            marginBottom: 'var(--sm)',
+          }}
+        >
+          Sustainably Produced
+        </h2>
+        <p style={{ marginBottom: 'var(--sm)' }}>
+          {/* Our programs include Frustration-Free Packaging and retail packaging
+          standards, renewable energy and energy efficiency with our all
+          electric box truck, waste minimization, product take-back, responsible
+          supply chain management, social responsibility, science and
+          innovation, sustainability technology, sustainable transportation, and
+          environmental management. */}
+          We believe in sustainability by focusing on the overall environmental
+          impact of our apiaries.
+        </p>
+        <p>Our programs include:</p>
+        <ul>
+          <li>Fully Electric Delivery Truck (Zero Emissions)</li>
+          <li>Sustainably Sourced Packaging (100% Recyclable)</li>
+          <li>Renewable Energy (Solar implementation)</li>
+          <li>Waste Minimization</li>
+          <li>Socially Responsible Culture</li>
+          <li>Responsible Supply Chain Management</li>
+          <li>Sustainable Transportation</li>
+        </ul>
+      </ImpactInfo>
+      <ImpactInfo>
+        <h2
+          style={{
+            marginBottom: 'var(--sm)',
+          }}
+        >
+          Compassionate and Ethical
+        </h2>
+        <p style={{ marginBottom: '0' }}>
+          As beekeepers it is our personal responsibility to take great care of
+          our bees. We monitor our beehives and apiaries regularly to ensure
+          quality condition of the hive structures and nearby water and food
+          sources, extract the honey onsite to ensure an ethical and
+          compassionate procedure and communicate with local growers to work
+          towards a better tomorrow for all of our local pollinators
+        </p>
+      </ImpactInfo>
     </ImpactGrid>
     <AboutRightCall
       title="A Simple Mission"

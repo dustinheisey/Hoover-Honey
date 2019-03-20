@@ -80,7 +80,7 @@ const Index = () => (
       </IndexCall>
       <IndexCall
         title="Honey Bundle"
-        price="$$29.87"
+        price="$29.87"
         text="Get our Light and Dark honey with this connoisseur bundle and enjoy each of the flavor profiles."
         link="/products/honey-bundle"
         buyLink="https://hoover-honey.myshopify.com/products/summer-fall-honey-bundle"

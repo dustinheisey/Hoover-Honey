@@ -22,11 +22,44 @@ const Container = styled.main`
     display: block;
   }
 `
+
+const IndexSpan = styled.span`
+  display: block;
+  margin: 0;
+
+  @media ${devices.tablet} {
+    display: inline;
+    margin-left: var(--md);
+  }
+`
+
 const Index = () => (
   <Layout>
     <SEO title="Home" />
     <VideoCall />
     <Container>
+      <div
+        style={{
+          padding: 'var(--sm)',
+          marginTop: 'var(--md)',
+          display: 'flex',
+          alignItems: 'center',
+          verticalAlign: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <h2>
+          Limited Sale
+          <IndexSpan
+            style={{
+              fontSize: '50%',
+              color: 'var(--dark-1)',
+            }}
+          >
+            Buy any two jars of honey for only $29.87!
+          </IndexSpan>
+        </h2>
+      </div>
       <IndexCall
         title="Summer Honey"
         price="$17.99"

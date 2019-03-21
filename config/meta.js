@@ -8,5 +8,5 @@ module.exports = {
     themeColor: `#C6920D`,
     backgroundColor: `#2a2a2a`,
   },
-  googleAnalyticsId: `UA-XXXXX`,
+  googleAnalyticsId: `UA-45565383-7`,
 }
